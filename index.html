@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的博客</title>
+    <style>
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: transparent;
+        }
+
+        /* 新增链接容器样式 */
+        .btn-link {
+            text-decoration: none; /* 移除默认下划线 */
+            display: inline-block;  /* 确保包裹按钮时布局正常 */
+        }
+
+        .green-btn {
+            background: linear-gradient(to bottom, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .green-btn:hover {
+            background: linear-gradient(to bottom, #45a049, #3e8e41);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+
+        .green-btn:active {
+            transform: translateY(1px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .green-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="btn-container">
+        <a href="https://10124jrfe2400.vicp.fun/" target="_blank" rel="noopener noreferrer" class="btn-link">
+            <button class="green-btn">我的博客</button>
+        </a>
+    </div>
+</body>
+</html>
